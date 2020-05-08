@@ -1,0 +1,152 @@
+*{
+    font-family: 'PT Sans', sans-serif !important;
+}
+.black{
+    background:black;
+}
+
+
+.noticia{
+    &1, &2, &3{
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+       
+    }
+}
+
+.gallery-highlight{
+    padding-bottom:60px;
+
+}
+.gallery-image-container{
+    position: relative;
+    box-sizing: border-box; 
+    height: 250px;
+    
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.notice-top{
+    position: relative;
+     margin-bottom:15px;
+}
+.notice-bottom{
+    position: relative;
+}
+
+.important-news-container{
+    height: 100%;
+    position: relative;
+    
+    &:hover{
+        .gradient-and-text{
+            animation: debounce 5s;
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #000 100%);
+
+        }
+        
+    }
+    
+}
+.gradient-and-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #000 150%);
+    // z-index:1;
+
+    .text-container{ 
+        color: white;
+        position: absolute;
+        bottom:0px;
+
+        padding:20px;
+        z-index: 2;
+        h2{
+            font-size:2.6em;
+            font-weight: bold;
+        }
+        p{
+            font-size:1.6em;
+        }
+    }
+}
+.title{
+        font-size: 1.4em;
+        color:#6c6b6b;
+        font-weight: bold;
+        padding-bottom:48px;
+        h2{
+            margin:0;
+            padding: 0;
+        }
+}
+.notice-wrapper{
+    .notice-image{
+    background: url("src/assets/noticiasimples.png");
+    background-size: cover;
+    height: 225px;
+    width:100%;
+    }
+    .notice-title{
+        color:#6c6b6b;
+        font-weight: bold;
+        font-size:1.6em;
+        word-wrap: break-word;
+        padding:10px 0 10px 0;
+        text-align: left;
+    font-family: 'PT Sans', sans-serif;
+
+    }
+    .notice-sub{
+        color:#6c6b6b;
+
+        // word-wrap: break-word;
+    }
+}
+.action-button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding:0 0 60px 0;
+    .btn-action{
+        background: #f2b90c;
+        color:white;
+    }
+}
+.important-notices{
+    background:#efefef;
+    padding:60px 0 60px 0;
+}
+.notices{
+    padding:60px 0 60px 0;
+}
+
+.title-box{
+    position: absolute;
+    z-index: 1;
+    padding-right:15px;
+    margin:0;
+    .background{
+    margin-top:190px ;
+    height: 60px;
+    background: hsla(138, 48%, 37%, 0.87);
+        
+    }
+    .text-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:5px;
+        h2{
+            font-size:1.8em;
+            color:white;
+            font-weight: bold;
+        }
+    }
+}
