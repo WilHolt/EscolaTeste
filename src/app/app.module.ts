@@ -13,6 +13,7 @@ import { ViewsModule } from './views/views.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ComponentsModule,
     // ComponentsModule,
     ViewsModule
   ],
