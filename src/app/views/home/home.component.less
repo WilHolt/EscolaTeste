@@ -92,6 +92,7 @@
     background-size: cover;
     height: 225px;
     width:100%;
+    position: relative;
     }
     .notice-title{
         color:#6c6b6b;
@@ -105,8 +106,20 @@
     }
     .notice-sub{
         color:#6c6b6b;
-
+        font-size:1.4em;
         // word-wrap: break-word;
+    }
+    .notice-date{
+        display: flex;
+        align-items: center;
+        color:#6c6b6b;
+        position: absolute;
+        bottom: 0;
+        .date{
+
+            padding-top:5px !important;
+            padding-left:10px;
+        }
     }
 }
 .action-button{
